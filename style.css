@@ -29,6 +29,11 @@
   font-size: 19px;
 }
 
+.span-hover {
+  color: white;
+  text-decoration: none;
+}
+
 .nav nav{
     display: flex;
     gap: 26px;
@@ -586,3 +591,117 @@ hr {
     }
      
 
+  .transaction-filters {
+    width: 85%;
+   margin-top: 20px;
+  padding: 30px;
+  font-family: sans-serif;
+}
+
+.transaction-filters h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 10px;
+}
+
+.search-wrapper input {
+  padding: 10px 15px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.filter-btn {
+  background: #e8e8e8;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 200px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #dcdcdc;
+}
+
+.tab-row {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  color: #333;
+}
+
+.tab-btn.active {
+  border-bottom-color: #f46a1d;
+  color: #f46a1d;
+}
+  
+    .trx-container {
+      width: 85%;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .trx-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .trx-details{
+      display: flex;
+      gap: 15px;
+    }
+
+    .trx-table th, .trx-table td {
+      padding: 12px 10px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    .trx-table th {
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    .trx-table td.amount {
+      font-weight: bold;
+      color: #d32f2f;
+    }
+
+    .trx-table td.amount.positive {
+      color: #2e7d32;
+    }
+
+    .trx-table td.icon {
+      font-size: 18px;
+    }
+
+    .trx-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .trx-date {
+      
+      color: #666;
+    }
