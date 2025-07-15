@@ -1,183 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/svg/logo.svg" type="svg" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoneyBank – შენი ფინანსური მენეჯერი</title>
+    <meta
+      name="description"
+      content="MoneyBank გაძლევს შესაძლებლობას მართო შენი ფინანსები მარტივად და ეფექტურად. იხილე ტრანზაქციები, ხარჯები და შემოსავლები ერთ სივრცეში."
+    />
+    <meta
+      name="keywords"
+      content="ფინანსები, ბანკი, MoneyBank, ტრანზაქციები, ხარჯები, შემოსავალი, მენეჯმენტი, ფინანსური აპლიკაცია"
+    />
+    <meta name="author" content="Susanna Matoian" />
     <title>MoneyBank</title>
-</head>
-<body>
-       <div class="container">
-         <div class="logo-profile"> 
-            <div class="logo">
-                <img src="/svg/logo.svg" alt="" width="50px" height="50px"> 
-                <span >MoneyBank</span>
-            </div>
-            <div class="profile">
-                <img src="/svg/notification.svg" alt="" width="20px" height="20px">
-                 <img src="/svg/black and white background.svg" alt="" width="20px" height="20px">
-                <div class="user-div"> <img class="User"src="img/User.jpg" alt="" width="50px" height="50px">
-                <a href="#">სუსანა მატოიანი</a>
-                 </div>
-                 <span>Eng</span>
-            </div>
-         </div>
-         <div class="nav">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-profile">
+        <div class="logo">
+          <img src="/svg/logo.svg" alt="" width="50px" height="50px" />
+          <span>MoneyBank</span>
+        </div>
+
+        <div class="profile">
+          <img src="/svg/notification.svg" alt="" width="20px" height="20px" />
+          <img
+            src="/svg/black and white background.svg"
+            alt=""
+            width="20px"
+            height="20px"
+          />
+          <div class="user-div">
+            <img
+              class="User"
+              src="img/User.jpg"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+            <a href="#">სუსანა მატოიანი</a>
+          </div>
+          <span>Eng</span>
+        </div>
+      </div>
+
+      <div class="nav">
         <nav>
-             <a class="span-hover" href="index.html">მთავარი</a>
-            <span>პროდუქტები</span>
-            <span>გადახდები და გადარიცხვები</span>
-            <span>გზავნილები</span>
-             <a class="span-hover" href="Transaktion.html">ჩემი ტრანზაქციები</a>
-            <span>შეთავაზებები და განაცხადები</span>
-            <span>ჩემი ფინანსები</span>
+          <a class="span-hover" href="index.html">მთავარი</a>
+          <span>პროდუქტები</span>
+          <span>გადახდები და გადარიცხვები</span>
+          <span>გზავნილები</span>
+          <a class="span-hover" href="Transaktion.html">ჩემი ტრანზაქციები</a>
+          <span>შეთავაზებები და განაცხადები</span>
+          <span>ჩემი ფინანსები</span>
         </nav>
-       </div>
-       <div class="content">
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="burger">&#9776;</label>
+
+      <label for="menu-toggle" class="overlay"></label>
+
+      <div class="side-panel">
+        <div class="mobile-profile">
+          <div class="user-div">
+            <img
+              class="User"
+              src="img/User.jpg"
+              alt=""
+              width="50"
+              height="50"
+            />
+            <a href="#">სუსანა მატოიანი</a>
+          </div>
+        </div>
+
+        <nav class="mobile-nav">
+          <a href="index.html">მთავარი</a>
+          <a href="">პროდუქტები</a>
+          <a href="">გადახდები და გადარიცხვები</a>
+          <a href="">გზავნილები</a>
+          <a href="Transaktion.html">ჩემი ტრანზაქციები</a>
+          <a href="">შეთავაზებები და განაცხადები</a>
+          <a href="">ჩემი ფინანსები</a>
+        </nav>
+      </div>
+
+      <div class="mobile-card-version">
+        <div class="card-container">
+          <div class="header">
+            <span>ხელმისაწვდომი</span>
+          </div>
+
+          <div class="total-amount">18.04 ₾</div>
+
+          <div class="card-row">
+            <div class="card-info">
+              <img src="/svg/visa-card.svg" alt="Visa Card" />
+              <div class="text">
+                <span class="title">ბარათი</span>
+                <span class="subtitle">VISA GOLD</span>
+              </div>
+            </div>
+            <div class="card-balance">18.04 ₾</div>
+          </div>
+
+          <div class="card-row">
+            <div class="card-info">
+              <img src="/svg/student.svg" alt="Student Card" />
+              <div class="text">
+                <span class="title">ბარათი</span>
+                <span class="subtitle">STUDENT CARD</span>
+              </div>
+            </div>
+            <div class="card-balance">0.00 ₾</div>
+          </div>
+        </div>
+
+        <div class="transactions-container">
+          <h3 class="transactions-title">ტრანზაქციები</h3>
+
+          <div class="transaction-group">
+            <p class="date-label">15 ივლისი, 2025</p>
+
+            <div class="transaction-entry">
+              <img src="/svg/block.svg" alt="Transaction icon" class="icon" />
+              <div class="transaction-text">
+                <span class="main-text">NIKORA>Tbilisi GE</span>
+                <span class="sub-text">ბოლქვიანი თანხა</span>
+              </div>
+              <div class="amount">-1.95 ₾</div>
+            </div>
+          </div>
+
+          <div class="transaction-group">
+            <p class="date-label">14 ივლისი, 2025</p>
+
+            <div class="transaction-entry">
+              <img src="/svg/other.svg" alt="Mobile top-up" class="icon" />
+              <div class="transaction-text">
+                <span class="main-text">Cellfie;579001577;თანხა:9.00</span>
+                <span class="sub-text">მობილური ტელეფონი</span>
+              </div>
+              <div class="amount">-9.00 ₾</div>
+            </div>
+
+            <div class="transaction-entry">
+              <img src="/svg/other.svg" alt="Pharmacy" class="icon" />
+              <div class="transaction-text">
+                <span class="main-text">POS - impex pharm gobronid…</span>
+                <span class="sub-text">წამლები</span>
+              </div>
+              <div class="amount">-4.50 ₾</div>
+            </div>
+
+            <div class="transaction-entry">
+              <img src="/svg/home.svg" alt="Groceries" class="icon" />
+              <div class="transaction-text">
+                <span class="main-text">POS - NIKORA, 5.05 GEL, Jul …</span>
+                <span class="sub-text">პროდუქტები სასურსათო</span>
+              </div>
+              <div class="amount">-5.05 ₾</div>
+            </div>
+
+            <div class="transaction-entry">
+              <img src="/svg/home.svg" alt="Groceries" class="icon" />
+              <div class="transaction-text">
+                <span class="main-text">POS - ORI NABIJI LLC, 3.45 G…</span>
+                <span class="sub-text">პროდუქტები სასურსათო</span>
+              </div>
+              <div class="amount">-3.45 ₾</div>
+            </div>
+          </div>
+
+          <div class="all-transactions">
+            <a class="span-hover" href="Transaktion.html">ყველა ტრანზაქცია</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <span class="title">ჩემი ფინანსები </span>
+            <div class="dropdown">
+              <span>წინა თვე</span>
+              <span class="arrow">▼</span>
+            </div>
+          </div>
+
+          <div class="chart">
+            <div class="donut"></div>
+          </div>
+
+          <div class="labels">
+            <div class="label">
+              <span class="dot income"></span>
+              <span>შემოსავალი</span>
+              <span class="amount">5,000.00 USD</span>
+            </div>
+            <div class="label">
+              <span class="dot expand"></span>
+              <span>შემოსავლის გაზრდა</span>
+              <span class="amount">1,000.00 USD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
         <div class="Accounts-transactions">
-       <div class="Accounts">
-        <div class="text-Accounts">
-          <p style="color: rgb(133, 127, 127);">ანგარიშები</p>
-          <br>
-          <p style="color: rgb(187, 174, 174);">სულ ხელმისაწდომი:</p>
-          <br>
-         <div> <span style="font-size: 20px; color: black; font-weight: 800;">400</span><span style="color: rgb(163, 161, 161); font-size: 14px;">GEL</span> </div>
+          <div class="Accounts">
+            <div class="text-Accounts">
+              <p style="color: rgb(133, 127, 127)">ანგარიშები</p>
+              <br />
+              <p style="color: rgb(187, 174, 174)">სულ ხელმისაწდომი:</p>
+              <br />
+              <div>
+                <span style="font-size: 20px; color: black; font-weight: 800"
+                  >400</span
+                >
+                <span style="color: rgb(163, 161, 161); font-size: 14px"
+                  >GEL</span
+                >
+              </div>
+            </div>
+            <hr class="line" />
+            <div class="line-div">
+              <div class="bankCard">
+                <div class="visa-gold">
+                  <img
+                    src="/svg/visa-card.svg"
+                    alt=""
+                    width="70px"
+                    height="70px"
+                  />
+                  <div>
+                    <span style="color: black; font-weight: 800">ბარათი</span>
+                    <span style="color: rgb(160, 155, 155)">VISA GOLD</span>
+                  </div>
+                </div>
+                <div class="student-card">
+                  <img
+                    src="/svg/student.svg"
+                    alt=""
+                    width="70px"
+                    height="70px"
+                  />
+                  <div>
+                    <span style="color: black; font-weight: 800">ბარათი</span>
+                    <span style="color: rgb(160, 155, 155)">STUDENT CARD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="money">
+                <p>300 <span style="font-size: 15px">GEL</span></p>
+                <p>100 <span style="font-size: 15px">GEL</span></p>
+              </div>
+            </div>
           </div>
-             <hr class="line">
-             <div style="display: flex; justify-content: space-between;  width: 70%;">
-             <div class="bankCard">
-          <div class="visa-gold"> 
-            <img src="/svg/visa-card.svg" alt="" width="70px" height="70px">
-          <div><span style="color: black; font-weight: 800;">ბარათი</span>
-            <span style="color: rgb(160, 155, 155);;">VISA GOLD</span></div>
+
+          <div class="transactions">
+            <div class="transactions-box">
+              <div class="text">
+                <span class="transactions-title">ბოლო ტრანზაქციები</span>
+                <a class="span-hover transactions-title" href="Transaktion.html"
+                  >სრულად ნახვა</a
+                >
+              </div>
+              <div class="transaction-item">
+                <div class="transaction-left">
+                  <img
+                    class="icon"
+                    src="/svg/block.svg"
+                    alt=""
+                    width="20px"
+                    height="20px"
+                  />
+                  <span class="date">11 ივლისი 2025</span>
+                </div>
+                <div class="transaction-details">ORI NABIJI>Tbilisi GE</div>
+                <div class="transaction-amount">-9,88 GEL</div>
+              </div>
+
+              <div class="transaction-item">
+                <div class="transaction-left">
+                  <img
+                    class="icon"
+                    src="/svg/block.svg"
+                    alt=""
+                    width="20px"
+                    height="20px"
+                  />
+                  <span class="date">11 ივლისი 2025</span>
+                </div>
+                <div class="transaction-details">ORI NABIJI LLC>Tbilisi GE</div>
+                <div class="transaction-amount">-3,45 GEL</div>
+              </div>
+
+              <div class="transaction-item">
+                <div class="transaction-left">
+                  <img
+                    class="icon"
+                    src="/svg/block.svg"
+                    alt=""
+                    width="20px"
+                    height="20px"
+                  />
+                  <span class="date">11 ივლისი 2025</span>
+                </div>
+                <div class="transaction-details">Wolt>Tbilisi GE</div>
+                <div class="transaction-amount">-13,78 GEL</div>
+              </div>
+            </div>
           </div>
-          <div class="student-card">
-            <img src="/svg/student.svg" alt="" width="70px" height="70px">
-          <div> <span style="color: black; font-weight: 800;">ბარათი</span>
-            <span style="color: rgb(160, 155, 155);">STUDENT CARD</span></div>
+        </div>
+        <div class="diagrama">
+          <div class="diagrama-month">
+            <div class="card-content">
+              <h2>ხარჯები ბოლო 7 დღის განმავლობაში</h2>
+
+              <div class="chart">
+                <div class="bar-group">
+                  <div class="bar" style="height: 60px"></div>
+                  <span>ორშ</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 130px"></div>
+                  <span>სამ</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 150px"></div>
+                  <span>ოთხ</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 120px"></div>
+                  <span>ხუთ</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 90px"></div>
+                  <span>პარ</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 160px"></div>
+                  <span>შაბ</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 100px"></div>
+                  <span>კვ</span>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="footer">
+                <div class="total">
+                  <p>ჯამი – მიმდინარე თვეში</p>
+                  <h3>$478.33</h3>
+                </div>
+                <div class="percent">
+                  <strong>+2.4%</strong>
+                  <p>წინა თვის</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="contact-widget">
+            <h3 class="contact-title">კონტაქტები</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <img src="/svg/user.svg" alt="" width="20px" height="20px" />
+                </div>
+                <div class="contact-name">ალვა მატლიანი</div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <img src="/svg/user.svg" alt="" width="20px" height="20px" />
+                </div>
+                <div class="contact-name">მიხსანდრი ჯოხონელიძე</div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <img src="/svg/user.svg" alt="" width="20px" height="20px" />
+                </div>
+                <div class="contact-name">ნატია ხუბულაშვილი</div>
+              </div>
+              <div class="contact-item active">
+                <div class="contact-icon">
+                  <img
+                    src="/svg/user-two.svg"
+                    alt=""
+                    width="20px"
+                    height="20px"
+                  />
+                </div>
+                <div class="contact-name">სხვასთან გადარიცხვა</div>
+              </div>
+              <div class="contact-item extra">
+                <div class="contact-icon">+24</div>
+                <div class="contact-name">მეტის ნახვა</div>
+              </div>
+            </div>
           </div>
-           <div class="money">
-           <p>300 <span style="font-size: 15px;">GEL</span></p>
-           <p>100 <span style="font-size: 15px;">GEL</span></p>
-      </div>
+        </div>
       </div>
     </div>
-       <div class="transactions">
-        <div class="transactions-box">
-          <div class="text" style="display: flex; justify-content: space-between; width: 400px;">
-    <span class="transactions-title">ბოლო ტრანზაქციები</span>
-     <a class="span-hover transactions-title" href="Transaktion.html">სრულად ნახვა</a>
-    </div>
-  <div class="transaction-item">
-    <div class="transaction-left">
-    <img class="icon" src="/svg/block.svg" alt="" width="20px" height="20px">
-      <span class="date">11 ივლისი 2025</span>
-    </div>
-    <div class="transaction-details">ORI NABIJI>Tbilisi GE</div>
-    <div class="transaction-amount">-9,88 GEL</div>
-  </div>
-
-  <div class="transaction-item">
-    <div class="transaction-left">
-      <img class="icon" src="/svg/block.svg" alt="" width="20px" height="20px">
-      <span class="date">11 ივლისი 2025</span>
-    </div>
-    <div class="transaction-details">ORI NABIJI LLC>Tbilisi GE</div>
-    <div class="transaction-amount">-3,45 GEL</div>
-  </div>
-
-  <div class="transaction-item">
-    <div class="transaction-left">
-      <img class="icon" src="/svg/block.svg" alt="" width="20px" height="20px">
-      <span class="date">11 ივლისი 2025</span>
-    </div>
-    <div class="transaction-details">Wolt>Tbilisi GE</div>
-    <div class="transaction-amount">-13,78 GEL</div>
-  </div>
-
-
-</div>
-       </div>
-      </div>
-      <div class="diagrama">
-       <div class="diagrama-month">
-         <div class="card-content">
-    <h2>ხარჯები ბოლო 7 დღის განმავლობაში</h2>
-
-    <div class="chart">
-      <div class="bar-group">
-        <div class="bar" style="height: 60px;"></div>
-        <span>ორშ</span>
-      </div>
-      <div class="bar-group">
-        <div class="bar" style="height: 130px;"></div>
-        <span>სამ</span>
-      </div>
-      <div class="bar-group">
-        <div class="bar" style="height: 150px;"></div>
-        <span>ოთხ</span>
-      </div>
-      <div class="bar-group">
-        <div class="bar" style="height: 120px;"></div>
-        <span>ხუთ</span>
-      </div>
-      <div class="bar-group">
-        <div class="bar" style="height: 90px;"></div>
-        <span>პარ</span>
-      </div>
-      <div class="bar-group">
-        <div class="bar" style="height: 160px;"></div>
-        <span>შაბ</span>
-      </div>
-      <div class="bar-group">
-        <div class="bar" style="height: 100px;"></div>
-        <span>კვ</span>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="footer">
-      <div class="total">
-        <p>ჯამი – მიმდინარე თვეში</p>
-        <h3>$478.33</h3>
-      </div>
-      <div class="percent">
-        <strong>+2.4%</strong>
-        <p>წინა თვის</p>
-      </div>
-    </div>
-  </div>
-    </div>
-   <div class="contact-widget">
-  <h3 class="contact-title">კონტაქტები</h3>
-  <div class="contact-list">
-    <div class="contact-item">
-      <div class="contact-icon"><img src="/svg/user.svg" alt="" width="20px" height="20px"></div>
-      <div class="contact-name">ალვა მატლიანი</div>
-    </div>
-    <div class="contact-item">
-      <div class="contact-icon"><img src="/svg/user.svg" alt="" width="20px" height="20px"></div>
-      <div class="contact-name">მიხსანდრი ჯოხონელიძე</div>
-    </div>
-    <div class="contact-item">
-      <div class="contact-icon"><img src="/svg/user.svg" alt="" width="20px" height="20px"></div>
-      <div class="contact-name">ნატია ხუბულაშვილი</div>
-    </div>
-    <div class="contact-item active">
-      <div class="contact-icon"><img src="/svg/user-two.svg" alt="" width="20px" height="20px"></div>
-      <div class="contact-name">სხვასთან გადარიცხვა</div>
-    </div>
-    <div class="contact-item extra">
-      <div class="contact-icon">+24</div>
-      <div class="contact-name">მეტის ნახვა</div>
-    </div>
-  </div>
-</div>
- </div>
- </div>
- </div>
-</body>
+  </body>
 </html>
